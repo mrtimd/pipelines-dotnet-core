@@ -20,7 +20,7 @@ steps:
   displayName: 'Create work item'
   inputs:
     #teamProject: # Optional
-    workItemType: 
+    workItemType: User Story
     title: New Work Item
     #assignedTo: # Optional
     #areaPath: # Optional
