@@ -15,3 +15,30 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+# Create or update a work item
+- task: CreateWorkItem@1
+  displayName: 'Create work item'
+  inputs:
+    #teamProject: # Optional
+    workItemType: 
+    title: New Work Item
+    #assignedTo: # Optional
+    #areaPath: # Optional
+    #iterationPath: # Optional
+    #fieldMappings: # Optional; Required if your process defines additional required work item fields
+    #associate: false # Optional
+    #linkWorkItems: false # Optional
+    #linkType: # Required if linkWorkItems = true
+    #linkTarget: id # Optional; Valid values: id, wiql
+    #targetId: # Required if linkWorkItems = true and linkTarget = id
+    #targetWiql: # Required if linkWorkItems = true and linkTarget = wiql
+    #linkPR: false # Optional
+    #addAttachments: false # Optional
+    #attachmentsFolder: # Optional
+    #attachments: # Required if addAttachments = true
+    #preventDuplicates: false # Optional
+    #keyFields: # Required if preventDuplicates = true
+    #updateDuplicates: false # Optional
+    #updateRules: # Optional
+    #createOutputs: false # Optional
+    #outputVariables: # Required if createOutputs = true
